@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>FastReport Layout Studio</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="topo"><h1>FastReport Layout Studio</h1><span id="arquivoAtual">Nenhum .fr3 aberto</span><button id="btnNovo" class="primario">Novo</button><button id="btnAbrir">Abrir .fr3</button><button id="btnSalvar">Salvar layout</button><button id="btnPreview">Visualizar impressão</button><button id="btnModo">Modo: Edição</button></header>
+<main class="visual-studio">
+  <aside class="componentes"><h2>Componentes</h2><p>Arraste para a folha ou clique para inserir.</p><div id="biblioteca"></div><hr><h2>Layout</h2><label class="campo"><span>Nome</span><input id="nomeLayout"></label><label class="campo"><span>Formato</span><select id="formato"><option>A4</option><option>BOBINA80</option><option>BOBINA58</option></select></label><h2>Dataset</h2><pre id="dataset"></pre></aside>
+  <section class="workspace"><div id="gridCanvas" class="band-editor" tabindex="0"></div><div id="status" role="status"></div></section>
+  <aside class="propriedades"><h2>Propriedades</h2><p id="semSelecao">Selecione um elemento no canvas.</p><form id="properties" hidden></form><h2>Dicionário</h2><div id="dicionario"></div></aside>
+</main>
+<input id="arquivo" type="file" accept=".fr3" hidden><div id="toast" role="status" aria-live="polite"></div><script type="module" src="app.js"></script>
+</body></html>

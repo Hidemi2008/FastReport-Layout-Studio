@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="6.0">
+  <ReportTitle>Studio Layout</ReportTitle>
+  <MemoView>[Empresa.Nome]</MemoView>
+  <MemoView>[Documento.Tipo] Nº [Documento.Numero]</MemoView>
+</TfrxReport>
